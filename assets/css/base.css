@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 62.5%;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+}
+
+/* Lịch */
+
+.mount {
+    flex: 1;
+    padding: 0 28px;
+    text-align: center;
+    position: relative;
+}
+
+.mount--present {
+}
+
+.mount-header {
+    color: #222!important;
+    font-size: 1.6rem!important;
+    line-height: 32px;
+    margin-bottom: 3px;
+}
+
+.mount-icon {
+    --height-width: 32px;
+    position: absolute;
+    top: 0;
+    color: #222;
+    line-height: var(--height-width);
+    width: var(--height-width);
+    height: var(--height-width);
+    border-radius: 50%;
+}
+
+.mount-icon:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.mount-icon--left {
+    left: 38px;
+}
+
+.mount-icon--right {
+    right: 38px;
+}
+
+.mount--next {
+
+}
+
+.mount-date {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mount-date li {
+    flex: calc(100% / 7);
+    display: inline-block;
+    padding: 15px;
+    color: #717171;
+    font-weight: 500;
+    border-radius: 50%;
+    line-height: 21px;
+}
+
+.mount-date--num li {
+    color: #222;
+    max-width: 51px;
+}
+
+.mount-date--num li:hover {
+    border: 1px solid #222;
+}
+
+.mount-date--num .mount-date--disable:hover,
+.mount-date--disable {
+    color: #d2d2d2 !important;
+    cursor: default;
+    border: none;
+}
+
+/* Ẩn thanh cuộn của Overflow */
+
+.content-list--overflow-flex::-webkit-scrollbar,
+.content-list--overflow::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+/* Navbar Footer Mobile */
+.navbar-footer--mobile {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    height: 64px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #ddd;
+}
+
+.navbar-footer__mobile {
+    text-align: center;
+    font-size: 1rem;
+    margin: 0 20px;
+    color: #b0b0b0;
+}
+
+.navbar-footer__mobile > i {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.navbar-footer__mobile:hover > i,
+.navbar-footer__mobile--active > i {
+    color: #ff3d60;
+}
+
+.navbar-footer__mobile:hover,
+.navbar-footer__mobile--active {
+    color: #222;
+}

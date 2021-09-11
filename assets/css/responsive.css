@@ -1,0 +1,137 @@
+@media (max-width: 1239px) {
+    .footer-origin {
+        flex-direction: column-reverse;
+    }
+    
+    .footer-origin__1 {
+        justify-content: center;
+    }
+
+    .content-list--overflow {
+        grid-template-columns: repeat(4, 33.33333%);
+    }
+
+    .item-place {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+}
+
+/* Màn hình PC tầm trung */
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .content-list__btn {
+        display: block;
+    }
+
+    .content-list--overflow {
+        grid-template-columns: repeat(4, 33.33333%);
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .content-list__btn {
+        display: block;
+    }
+    
+    .navbar__place {
+        top: 97px;
+        width: 100%;
+    }
+
+    .nav-time-big {
+        margin: 0;
+    }
+
+    .nav-time {
+        width: 100%;
+    }
+
+    .navbar__place.navbar__place--scroll {
+        top: 18px;
+        left: 50%;
+        width: auto;
+    }
+
+    .content-list__title {
+        font-size: 3rem;
+        line-height: 3.2rem;
+    }
+
+    .content-list__description {
+        font-size: 1.5rem;
+    }
+
+    .navbar__place--flexed {
+        margin-left: -160px;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 739px) {
+    .navbar--mobile {
+        display: flex;
+    }
+
+    .content-list--overflow {
+        grid-template-columns: repeat(4, 75%);
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .description-item.fab {
+        display: none;
+    }
+
+    .footer-origin__1 {
+        flex-wrap: wrap;
+    }
+
+    .footer-origin__1-list + .footer-origin__1-list {
+        display: none;
+    }
+
+    .content-list--overflow {
+        overflow-x: scroll;
+    }
+
+    .content-list h2 {
+        font-size: 2rem;
+    }
+
+    .navbar-footer--mobile {
+        display: flex;
+    }
+
+    .item-place {
+        flex: 0 0 70%;
+        max-width: 70%;
+    }
+
+    .content-list > .place-img {
+        padding: 50% 0 0 0;
+        background: #232323;
+    }
+
+    .content-list__info{
+        left: 40px;
+        right: 40px;
+        text-align: center;
+        top: 130px;
+        width: calc(100% - 80px);
+    }
+
+    .content-list__title {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .content-list__more {
+        margin: 40px auto 0;
+        font-size: 1.4rem;
+        padding: 12px;
+    }
+}
